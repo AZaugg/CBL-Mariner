@@ -1,7 +1,7 @@
 Summary:        dnf/yum equivalent using C libs
 Name:           tdnf
 Version:        3.2.2
-Release:        4%{?dist}
+Release:        6%{?dist}
 License:        LGPLv2.1 AND GPLv2
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -17,6 +17,7 @@ Patch0:         tdnf-mandatory-space-list-output.patch
 Patch1:         tdnf-default-mariner-release.patch
 Patch2:         tdnf-enable-plugins-by-default.patch
 Patch3:         tdnf-add-download-command.patch
+Patch4:         tdnf-bugFix-segfault-caused-due-to-missing-name-param.patch
 #Cmake requires binutils
 BuildRequires:  binutils
 BuildRequires:  cmake
